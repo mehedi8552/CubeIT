@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import projectData from "./ProjectMap";
 const Project = () => {
   return (
-    <div className="px-10 md:px-60 space-y-5 mb-4">
+    <div className="px-10 lg:px-60 space-y-5 mb-4">
       <h1 className="text-4xl font-bold text-gray-700">Latest Projects</h1>
       <div className="md:flex justify-between space-y-3">
         <p className="text-gray-700 py-2 " >Check out some of my latest projects with creative ideas.</p>

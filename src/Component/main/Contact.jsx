@@ -3,7 +3,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className=" my-8  px-10 md:px-60">
+    <div className=" px-10 lg:px-60">
     <div className="w-fit h-fit bg-pink-100 p-20 grid md:grid-cols-2 gap-8">
       <div className="space-y-3">
         <img className="h-14 mb-10" src={msglogo} alt="" />

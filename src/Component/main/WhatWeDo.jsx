@@ -6,7 +6,7 @@ import seoicon from "../../assets/images/icon-4.svg";
 
 const WhatWeDo = () => {
   return (
-    <div className=" p-10 pt-20 md:px-60 ">
+    <div className=" p-10 pt-20 lg:px-60 ">
       <div className="grid md:grid-cols-2 gap-10">
         <div className="flex flex-col justify-center md:pt-20">
           <h1 className="text-4xl font-bold text-gray-700">What We Do</h1>

@@ -4,7 +4,7 @@ import image from "../../assets/images/hero-banner.jpg";
 import shape from "../../assets/images/hero-shape.svg";
 const Hero = () => {
   return (
-    <section className="grid md:grid-cols-2 gap-10 bg-gray-100 p-10 md:px-60 ">
+    <section className="grid lg:grid-cols-2 gap-10 bg-gray-100 p-10 lg:px-60 ">
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
