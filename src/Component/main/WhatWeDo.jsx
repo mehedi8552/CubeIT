@@ -106,7 +106,8 @@ const WhatWeDo = () => {
           </div>
         </motion.div>
       </div>
-      <div className="text-center space-y-4 lg:flex flex-wrap py-20 space-x-4">
+      {/* grid for icons */}
+      <div className="text-center grid md:grid-cols-2 lg:grid-cols-4  gap-10 py-20">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -123,7 +124,7 @@ const WhatWeDo = () => {
             ease: "easeInOut",
             duration: 0.8,
           }}
-          className="space-y-3 lg:pt-4 lg:pr-10 h-full w-full bg-slate-200 p-10  rounded-md my-2 ml-4 mt-4"
+          className="space-y-3 mt-2 h-full w-full bg-slate-200 p-10  rounded-md "
         >
           <img className="block ml-auto mr-auto h-12" src={webicon} alt="" />
           <h1 className="text-2xl font-bold text-gray-700">Web Design</h1>
@@ -173,14 +174,14 @@ const WhatWeDo = () => {
             ease: "easeIn",
             duration: 0.3,
           }}
-          className="space-y-3 lg:pt-4 lg:pr-10 h-full w-full bg-slate-200 p-10  rounded-md my-2"
+          className="space-y-3 lg:pt-4  h-full w-full bg-slate-200 p-10  rounded-md my-2"
         >
           <img
             className="block ml-auto mr-auto h-12"
             src={developmenticon}
             alt=""
           />
-          <h1 className="text-2xl font-bold text-gray-700">Development</h1>
+          <h1 className="text-2xl text-center  font-bold text-gray-700">Developer</h1>
           <p>
             Nulla vitae elit libero, a pharetra augue. Donec id elit non mi
             porta gravida at eget metus. Cras justo cum sociis natoque magnis.
