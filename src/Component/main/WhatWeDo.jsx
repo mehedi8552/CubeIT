@@ -9,90 +9,208 @@ const WhatWeDo = () => {
   return (
     <div className=" p-10 pt-20 lg:px-60">
       <div className="grid md:grid-cols-2 gap-10">
-        <div className="flex flex-col justify-center md:pt-20">
+        <div className="flex flex-col justify-center pt-10 lg:pt-20 ">
           <motion.h1
             initial={{ opacity: 0, x: -100 }}
-            animate={{opacity:1,x:0}}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{
-              delay:0.2,
-              x:{type:"spring",stiffness:100},
-              opacity:{duration:0.2},
+              delay: 0.2,
+              x: { type: "spring", stiffness: 100 },
+              opacity: { duration: 0.2 },
+              ease: "easeIn",
+              duration: 0.5,
             }}
             className="text-4xl font-bold text-gray-700"
           >
             What We Do
           </motion.h1>
-          <p className="text-gray-700 py-5">
+          <motion.p
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              delay: 0.3,
+              x: { type: "spring", stiffness: 100 },
+              opacity: { duration: 0.2 },
+              // ease:"easeIn",
+              duration: 0.5,
+            }}
+            className="text-gray-700 py-5"
+          >
             Duis mollis est commodo luctus nisi erat porttitor ligula, eget
             lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare
             vel. Nulla vitae elit libero, a pharetra augue. Praesent commodo
             cursus magna, vel scelerisque nisl.
-          </p>
+          </motion.p>
         </div>
-        <div className="space-y-2">
-          <div>
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{
+            delay: 0.3,
+            x: { type: "spring", stiffness: 100 },
+            opacity: { duration: 0.2 },
+            ease: "easeIn",
+            duration: 0.5,
+          }}
+          className="space-y-2"
+        >
+          <div className=" font-bold text-gray-700">
             <p className="pt-20">Web Design</p>
-            <div className="w-full h-1 bg-black">
-              <div className="w-5/6 h-1 bg-yellow-300"></div>
+            <div className="w-full h-2 bg-gray-500 my-2">
+              <motion.div
+                whileInView={{
+                  width: "89%",
+                }}
+                transition={{
+                  duration: 3,
+                }}
+                className="w-2 h-2 bg-pink-400"
+              ></motion.div>
             </div>
           </div>
           <div>
-            <p>Web development</p>
-            <div className="w-full h-1 bg-black">
-              <div className="w-5/6 h-1 bg-yellow-300"></div>
+            <p className=" font-bold text-gray-700">Web development</p>
+            <div className="w-full h-2 bg-gray-500 my-2">
+              <motion.div
+                whileInView={{
+                  width: "89%",
+                }}
+                transition={{
+                  duration: 2,
+                }}
+                className="w-2 h-2 bg-pink-400"
+              ></motion.div>
             </div>
           </div>
           <div>
-            <p> UI/UX Design</p>
-            <div className="w-full h-1 bg-black">
-              <div className="w-5/6 h-1 bg-yellow-300"></div>
+            <p className=" font-bold text-gray-700"> UI/UX Design</p>
+            <div className="w-full h-2 bg-gray-500 my-2">
+              <motion.div whileInView={{
+                  width: "89%",
+                }}
+                transition={{
+                  duration: 3,
+                }} className="w-2 h-2 bg-pink-400"></motion.div>
             </div>
           </div>
           <div>
-            <p> Marketing </p>
-            <div className="w-full h-1 bg-black">
-              <div className="w-5/6 h-1 bg-yellow-300"></div>
+            <p className=" font-bold text-gray-700"> Marketing </p>
+            <div className="w-full h-2 bg-gray-500 my-2">
+              <motion.div whileInView={{
+                  width: "89%",
+                }}
+                transition={{
+                  duration: 2,
+                }} className="w-2 h-2 bg-pink-400"></motion.div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
-      <div className="text-center space-y-5 md:flex  py-20">
-        <div className="space-y-3 md:pt-4 md:pr-10">
+      <div className="text-center space-y-4 lg:flex flex-wrap py-20 space-x-4">
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          whileHover={{
+            scale: 1.1,
+            backgroundColor: "pink",
+            cursor: "pointer",
+            transition: { duration: 0.3 },
+          }}
+          transition={{
+            delay: 0.1,
+            y: { type: "spring", stiffness: 100 },
+            opacity: { duration: 0.2 },
+            ease: "easeInOut",
+            duration: 0.8,
+          }}
+          className="space-y-3 lg:pt-4 lg:pr-10 h-full w-full bg-slate-200 p-10  rounded-md my-2 ml-4 mt-4"
+        >
           <img className="block ml-auto mr-auto h-12" src={webicon} alt="" />
-          <h1>Web Design</h1>
+          <h1 className="text-2xl font-bold text-gray-700">Web Design</h1>
           <p>
             Nulla vitae elit libero, a pharetra augue. Donec id elit non mi
             porta gravida at eget metus. Cras justo cum sociis natoque magnis.
           </p>
-        </div>
-        <div className="space-y-3 md:px-10">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          whileHover={{
+            scale: 1.1,
+            backgroundColor: "pink",
+            cursor: "pointer",
+            transition: { duration: 0.3 },
+          }}
+          transition={{
+            delay: 0.1,
+            y: { type: "spring", stiffness: 90 },
+            opacity: { duration: 0.2 },
+            ease: "easeIn",
+            duration: 0.3,
+          }}
+          className="space-y-3 lg:pt-4 lg:pr-10 h-full w-full bg-slate-200 p-10  rounded-md my-2"
+        >
           <img className="block ml-auto mr-auto h-12" src={phoneicon} alt="" />
-          <h1>Mobile Design</h1>
+          <h1 className="text-2xl font-bold text-gray-700">Mobile Design</h1>
           <p>
             Nulla vitae elit libero, a pharetra augue. Donec id elit non mi
             porta gravida at eget metus. Cras justo cum sociis natoque magnis.
           </p>
-        </div>
-        <div className="space-y-3 md:px-10">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          whileHover={{
+            scale: 1.1,
+            backgroundColor: "pink",
+            cursor: "pointer",
+            transition: { duration: 0.3 },
+          }}
+          transition={{
+            delay: 0.3,
+            y: { type: "spring", stiffness: 85 },
+            opacity: { duration: 0.2 },
+            ease: "easeIn",
+            duration: 0.3,
+          }}
+          className="space-y-3 lg:pt-4 lg:pr-10 h-full w-full bg-slate-200 p-10  rounded-md my-2"
+        >
           <img
             className="block ml-auto mr-auto h-12"
             src={developmenticon}
             alt=""
           />
-          <h1>Development</h1>
+          <h1 className="text-2xl font-bold text-gray-700">Development</h1>
           <p>
             Nulla vitae elit libero, a pharetra augue. Donec id elit non mi
             porta gravida at eget metus. Cras justo cum sociis natoque magnis.
           </p>
-        </div>
-        <div className="space-y-3 md:pl-10">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          whileHover={{
+            scale: 1.1,
+            backgroundColor: "pink",
+            cursor: "pointer",
+            transition: { duration: 0.3 },
+          }}
+          transition={{
+            delay: 0.1,
+            y: { type: "spring", stiffness: 80 },
+            opacity: { duration: 0.2 },
+            ease: "easeIn",
+            duration: 0.3,
+          }}
+          className="space-y-3 lg:pt-4 lg:pr-10 h-full w-full bg-slate-200 p-10  rounded-md my-2"
+        >
           <img className="block ml-auto mr-auto h-12" src={seoicon} alt="" />
-          <h1>SEO</h1>
+          <h1 className="text-2xl font-bold text-gray-700">SEO</h1>
           <p>
             Nulla vitae elit libero, a pharetra augue. Donec id elit non mi
             porta gravida at eget metus. Cras justo cum sociis natoque magnis.
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

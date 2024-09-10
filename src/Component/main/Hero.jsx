@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="grid lg:grid-cols-2 gap-10 bg-gray-100 p-10 lg:px-60 ">
       <motion.div
         initial={{ opacity: 0, x: -100 }}
-        animate={{ opacity: 1, x: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{
           delay: 0.5,
           x: { type: "spring", stiffness: 100 },
@@ -31,7 +31,7 @@ const Hero = () => {
       <div className="text-center md:text-left  flex flex-col justify-center">
         <motion.h1
           initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{
             delay: 2,
             x: { type: "spring", stiffness: 100 },
@@ -45,7 +45,7 @@ const Hero = () => {
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{
             delay: 0.3,
             x: { type: "spring", stiffness: 100 },
@@ -59,15 +59,15 @@ const Hero = () => {
           based in London. I’m very passionate about the work that I do.
         </motion.p>
         <motion.div
-                    initial={{ opacity: 0, x: 100 }}
-                    animate={{ opacity: 1, x: 0,  }}
-                    transition={{
-                      delay: 0.3,
-                      x: { type: "spring", stiffness: 100 },
-                      opacity: { duration: 0.2 },
-                      ease: "easeIn",
-                      duration: 0.5,
-                    }}
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{
+            delay: 0.3,
+            x: { type: "spring", stiffness: 100 },
+            opacity: { duration: 0.2 },
+            ease: "easeIn",
+            duration: 0.5,
+          }}
           className="pt-10 flex flex-row justify-center"
         >
           <a

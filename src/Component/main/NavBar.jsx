@@ -10,7 +10,7 @@ const DropdownMenu = () => {
   };
 
   return (
-    <nav className="h-fit w-full bg-pink-200 flex justify-between py-4 px-10 lg:px-60 ">
+    <nav className="h-fit w-full bg-pink-200 flex justify-between py-4 px-10 lg:px-60 fixed z-50">
       <div>
         <h1 className="text-3xl font-bold text-gray-700">Logo</h1>
       </div>
