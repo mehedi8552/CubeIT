@@ -12,7 +12,7 @@ const Project = () => {
       <div>
      {
         projectData.map((item,i)=>(
-            <div className="h-full w-full grid md:grid-cols-2 gap-8 bg-slate-100 px-10 my-8">
+            <div className="h-full w-full grid lg:grid-cols-2 gap-8 bg-slate-100 px-10 my-8">
             <div className="space-y-2" key={i}>
               <h1 className="uppercase font-bold text-gray-500 pt-4">{item.name}</h1>
               <p className="text-4xl font-bold text-gray-700">{item.title}</p>

@@ -4,7 +4,7 @@ import React from "react";
 const Contact = () => {
   return (
     <div className=" px-10 lg:px-60">
-    <div className="w-fit h-fit bg-pink-100 p-20 grid md:grid-cols-2 gap-8">
+    <div className="w-fit h-fit bg-pink-100 p-10 grid lg:grid-cols-2 gap-8 my-8">
       <div className="space-y-3">
         <img className="h-14 mb-10" src={msglogo} alt="" />
         <h1 className="text-4xl font-bold text-gray-700">If you like what you see, let's work together.</h1>
