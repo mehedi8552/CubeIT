@@ -23,7 +23,6 @@ const Project = () => {
               <button className="text-gray-700 font-bold " href="#">See Project</button>
               <FaArrowRight className="text-gray-700 mt-1 ml-1" />
               </div>
-              
             </div>
             <div>
                 <img src={item.image} alt="" />

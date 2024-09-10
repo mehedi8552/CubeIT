@@ -59,10 +59,10 @@ const Hero = () => {
           based in London. I’m very passionate about the work that I do.
         </motion.p>
         <motion.div
-                    initial={{ opacity: 0, y: 100 }}
-                    animate={{ opacity: 1, y: 0,  }}
+                    initial={{ opacity: 0, x: 100 }}
+                    animate={{ opacity: 1, x: 0,  }}
                     transition={{
-                      // delay: 0.3,
+                      delay: 0.3,
                       x: { type: "spring", stiffness: 100 },
                       opacity: { duration: 0.2 },
                       ease: "easeIn",
@@ -71,14 +71,14 @@ const Hero = () => {
           className="pt-10"
         >
           <a
-            className="bg-blue-500  hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-md"
+            className="bg-blue-500  hover:bg-blue-700 text-white font-bold py-3 px-2 rounded-md"
             href="#"
           >
             See My Works
           </a>
 
           <a
-            className="bg-white text-blue-500 py-3 px-4 rounded-md hover:bg-blue-700 border-2 hover:text-white border-blue-500 font-bold ml-5"
+            className="bg-white text-blue-500 py-3 px-2  rounded-md hover:bg-blue-700 border hover:text-white border-blue-500 font-bold ml-5"
             href="#"
           >
             Contact Me

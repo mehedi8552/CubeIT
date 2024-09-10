@@ -10,7 +10,7 @@ const DropdownMenu = () => {
   };
 
   return (
-    <nav className="h-fit w-full bg-pink-200 flex justify-between py-4 px-10 md:px-60 ">
+    <nav className="h-fit w-full bg-pink-200 flex justify-between py-4 px-10 lg:px-60 ">
       <div>
         <h1 className="text-3xl font-bold text-gray-700">Logo</h1>
       </div>
@@ -41,7 +41,7 @@ const DropdownMenu = () => {
       <div className="md:hidden relative">
         <button
           onClick={handleToggle}
-          class="inline-flex items-center px-4 py-2  text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-100"
+          class="inline-flex items-center px-4 py-2  text-sm font-medium text-gray-700 rounded-lg hover:bg-pink-300"
         >
          { ismenu ? <RiMenu2Fill  className="h-6 w-6" /> : <HiOutlineXMark  className="h-6 w-6" />} 
         </button>
