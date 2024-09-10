@@ -68,7 +68,7 @@ const Hero = () => {
                       ease: "easeIn",
                       duration: 0.5,
                     }}
-          className="pt-10"
+          className="pt-10 flex flex-row justify-center"
         >
           <a
             className="bg-blue-500  hover:bg-blue-700 text-white font-bold py-3 px-2 rounded-md"
