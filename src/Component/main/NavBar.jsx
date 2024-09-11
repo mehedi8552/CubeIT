@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { RiCrop2Line, RiMenu2Fill } from "react-icons/ri";
+import { RiMenu2Fill } from "react-icons/ri";
+import {motion} from "framer-motion"
 import { HiOutlineXMark } from "react-icons/hi2";
 const DropdownMenu = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -10,12 +11,12 @@ const DropdownMenu = () => {
   };
 
   return (
-    <nav className="h-fit w-full bg-pink-200 flex justify-between py-4 px-10 lg:px-60 fixed z-50">
+    <nav className="h-fit w-full bg-pink-200 flex justify-between py-4 px-10 lg:px-60">
       <div>
-        <h1 className="text-3xl font-bold text-gray-700">Logo</h1>
+        <motion.h1 initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.5, x: { type: "spring", stiffness: 100 }, opacity: { duration: 0.1 }, ease: "easeIn", duration: 0.5 }} className="text-3xl font-bold text-gray-700">CubeIT</motion.h1>
       </div>
       <div className="hidden md:flex">
-        <ul className="flex text-gray-700 py-3">
+        <motion.ul initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.5, x: { type: "spring", stiffness: 100 }, opacity: { duration: 0.1 }, ease: "easeIn", duration: 0.5 }} className="flex text-gray-700 py-3">
           <li>
             <a className="mr-5 font-bold" href="">
               Home
@@ -36,7 +37,7 @@ const DropdownMenu = () => {
               Contact
             </a>
           </li>
-        </ul>
+        </motion.ul>
       </div>
       <div className="md:hidden relative">
         <button
